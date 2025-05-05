@@ -1,0 +1,8 @@
+import string
+def pun(s):
+	table=str.maketrans('', '',string.punctuation)
+	return s.translate(table)
+
+
+s=input("")
+print(pun(s))
