@@ -1,0 +1,3 @@
+w=input("")
+rev=w[::-1]
+print(f"{rev}")
