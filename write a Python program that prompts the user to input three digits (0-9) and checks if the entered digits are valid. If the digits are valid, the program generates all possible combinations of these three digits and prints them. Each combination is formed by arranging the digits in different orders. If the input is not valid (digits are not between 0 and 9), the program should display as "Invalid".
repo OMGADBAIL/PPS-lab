@@ -1,0 +1,17 @@
+from itertools import permutations
+
+def  com(d1,d2,d3):
+	if 0<=d1<=9 and 0<=d2<=9 and 0<=d3<=9:
+		c=permutations([d1,d2,d3])
+		for item in c:
+			print("".join(map(str,item)))
+	else:
+		print("Invalid")
+
+
+d1=int (input("digit1 (0-9): "))
+d2=int (input("digit2 (0-9): "))
+d3=int (input("digit3 (0-9): "))
+
+com(d1,d2,d3)
+
