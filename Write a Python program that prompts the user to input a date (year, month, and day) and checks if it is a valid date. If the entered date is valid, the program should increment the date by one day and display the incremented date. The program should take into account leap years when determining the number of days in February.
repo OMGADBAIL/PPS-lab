@@ -1,0 +1,16 @@
+from datetime import datetime,timedelta
+
+def c(year,month,day):
+	try:
+		date=datetime(year,month,day)
+		incremented_date=date + timedelta(days=1)
+		return f"valid\nincremented date: {incremented_date.strftime('%Y-%m-%d')}"
+	except ValueError:
+		return "invalid"
+
+year=int(input("year: "))
+month=int(input("month: "))
+day=int(input("day: "))
+
+print(c(year,month,day))
+
